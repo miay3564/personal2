@@ -1,0 +1,48 @@
+main{
+  height: auto;
+}
+main #skill{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 3%;
+  box-sizing: border-box;
+}
+main #skill .wrap{
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #skill .wrap h2{
+  margin-bottom: 55px;
+}
+main #skill .wrap .ss{
+  display: flex;
+}
+main #skill .wrap .ss ul.s{
+  display: flex;
+  flex-direction: column;
+}
+main #skill .wrap .ss ul.s1{
+  margin-right: 70px;
+}
+main #skill .wrap .ss ul.s2{
+  margin-right: 70px;
+}
+main #skill .wrap .ss ul.s3{
+  margin-right: 70px;
+}
+main #skill .wrap .ss ul.s4{
+  margin-right: 70px;
+}
+main #skill .wrap .ss ul.s5{
+
+}
+main #skill .wrap .ss ul.s li{
+  font-size: 20px;
+  line-height: 4;
+  text-align: center;
+}

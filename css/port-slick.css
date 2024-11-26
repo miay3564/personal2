@@ -1,0 +1,35 @@
+div.p2 .slick-prev{
+    left: 100px;
+    z-index: 1;
+    transform: translateY(-30px);
+}
+div.p2 .slick-prev::before{
+    content: "";
+    background-image: url(../img/prev.svg);
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.p2 .slick-next{
+    right: 100px;
+    z-index: 1;
+    transform: translateY(-30px);
+}
+div.p2 .slick-next::before{
+    content: "";
+    background-image: url(../img/next.svg);
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.p2 .slick-dots{
+    bottom: -150px;
+    margin-bottom: 100px;
+}
+div.p2 .slick-dots li button::before{
+    color: white;
+}
