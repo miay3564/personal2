@@ -3,13 +3,13 @@ main{
 }
 main #skill{
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 100vh;
+  /*! background-color: black; */
   padding: 3%;
   box-sizing: border-box;
 }
 main #skill .wrap{
-  color: white;
+  color: #fff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,32 +17,60 @@ main #skill .wrap{
   align-items: center;
 }
 main #skill .wrap h2{
-  margin-bottom: 55px;
+  margin-bottom: 70px;
 }
 main #skill .wrap .ss{
   display: flex;
 }
 main #skill .wrap .ss ul.s{
-  display: flex;
-  flex-direction: column;
-}
-main #skill .wrap .ss ul.s1{
-  margin-right: 70px;
-}
-main #skill .wrap .ss ul.s2{
-  margin-right: 70px;
-}
-main #skill .wrap .ss ul.s3{
-  margin-right: 70px;
-}
-main #skill .wrap .ss ul.s4{
-  margin-right: 70px;
-}
-main #skill .wrap .ss ul.s5{
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 100px;
 }
 main #skill .wrap .ss ul.s li{
   font-size: 20px;
   line-height: 4;
   text-align: center;
+}
+main #skill .wrap .ss ul.s li::before{
+  content: "";
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  border-radius: 10px;
+}
+main #skill .wrap .ss ul.s li:nth-child(1)::before{
+  background-image: url(../img/html.png);
+  background-size: 500px 245px;
+}
+main #skill .wrap .ss ul.s li:nth-child(2)::before{
+  background-image: url(../img/css.png);
+}
+main #skill .wrap .ss ul.s li:nth-child(3)::before{
+  background-image: url(../img/javascript.png);
+  background-size: cover;
+  background-size: 380px 203px;
+}
+main #skill .wrap .ss ul.s li:nth-child(4)::before{
+  background-image: url(../img/jquery.png);
+}
+main #skill .wrap .ss ul.s li:nth-child(5)::before{
+  background-image: url(../img/photoshop.png);
+  background-color: transparent;
+}
+main #skill .wrap .ss ul.s li:nth-child(6)::before{
+  background-image: url(../img/illustrator.png);
+  background-color: transparent;
+}
+main #skill .wrap .ss ul.s li:nth-child(7)::before{
+  background-image: url(../img/vscode.png);
+}
+main #skill .wrap .ss ul.s li:nth-child(8)::before{
+  background-image: url(../img/github.png);
 }

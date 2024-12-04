@@ -13,24 +13,24 @@ header .wrap{
 }
 header .wrap h1{
   display: flex;
-  height: 100%;
-  column-gap: 60px;
+  height: 80px;
 }
 header .wrap h1 a{
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 20px 25px 20px 5px;
+  /*! padding: 20px 25px 20px 5px; */
   box-sizing: border-box;
-  font-size: 22px;
+  font-size: 0;
   font-weight: 600;
-}
-header .wrap h1::before{
-  
+  background-image: url(../img/logopf_r.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  background-position: center;
 }
 header .wrap ul{
   height: 100%;
-  column-gap: 60px;
 }
 header .wrap ul li{
   height: 100%;
@@ -39,11 +39,12 @@ header .wrap ul li a{
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 20px 25px;
+  padding: 20px 30px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   position: relative;
+  text-transform: capitalize;
 }
 header .wrap ul li a::after{
   content:"";
