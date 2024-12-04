@@ -61,11 +61,11 @@ main #skill .wrap .ss ul.s li:nth-child(4)::before{
   background-image: url(../img/jquery.png);
 }
 main #skill .wrap .ss ul.s li:nth-child(5)::before{
-  background-image: url(../img/photoshop.png);
+  background-image: url(../img/Photoshop.png);
   background-color: transparent;
 }
 main #skill .wrap .ss ul.s li:nth-child(6)::before{
-  background-image: url(../img/illustrator.png);
+  background-image: url(../img/Illustrator.png);
   background-color: transparent;
 }
 main #skill .wrap .ss ul.s li:nth-child(7)::before{
