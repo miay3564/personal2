@@ -38,6 +38,53 @@
             });
         });
     </script>
+
+<script>
+    $(document).ready(function(){
+        if($(window).width()<769){
+            //header의 nav에 마크업을 추가하시오. 추가할 곳 / 추가할 것
+            //모바일에서 대메뉴에 있는 이벤트 없애기
+            $("header .wrap ul li").off("mouseenter mouseleave");
+            //append : 없는 것을 nav의 제일 마지막에 추가 //prepend : 없는 것을 nav의 제일 앞에 추가
+            $("header .wrap").append('<div class="mobileMenu"></div>');
+            //.member를 .mobileMenu로 이동시키시오.
+            // appendTo : ""에 있는 걸 ''안으로 이동
+            $("header .wrap ul").appendTo('.mobileMenu');
+            //.ham 클릭시 실행.
+            $(".ham").click(function(){
+                $(".mobileMenu").toggleClass('mobileMenuShow');
+                return false;
+            });
+        }
+        
+        $(window).resize(function(){
+            console.log("Resize detected");
+            if ($(window).width() <= 768) {
+                console.log("Switching to mobile view");
+                if (!$(".mobileMenu").length) {
+                    console.log("Adding .mobileMenu");
+                    $("header .wrap").append('<div class="mobileMenu"></div>');
+                }
+                $("header .wrap ul").appendTo(".mobileMenu");
+
+                $(".ham").off("click");
+                $(".ham").on("click",function(){
+                    $(".mobileMenu").toggleClass('mobileMenuShow');
+                    return false;
+                });
+            
+                console.log("Moved ul to .mobileMenu");
+            } else {
+                console.log("Switching to desktop view");
+                if ($(".mobileMenu").length) {
+                    $("header .wrap ul").appendTo("header .wrap");
+                    $(".mobileMenu").remove();
+                    console.log(".mobileMenu removed");
+                }
+            }
+        });
+    });
+</script>
 </head>
 <body>
     <header>
