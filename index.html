@@ -38,53 +38,6 @@
             });
         });
     </script>
-
-<script>
-    $(document).ready(function(){
-        if($(window).width()<769){
-            //header의 nav에 마크업을 추가하시오. 추가할 곳 / 추가할 것
-            //모바일에서 대메뉴에 있는 이벤트 없애기
-            $("header .wrap ul li").off("mouseenter mouseleave");
-            //append : 없는 것을 nav의 제일 마지막에 추가 //prepend : 없는 것을 nav의 제일 앞에 추가
-            $("header .wrap").append('<div class="mobileMenu"></div>');
-            //.member를 .mobileMenu로 이동시키시오.
-            // appendTo : ""에 있는 걸 ''안으로 이동
-            $("header .wrap ul").appendTo('.mobileMenu');
-            //.ham 클릭시 실행.
-            $(".ham").click(function(){
-                $(".mobileMenu").toggleClass('mobileMenuShow');
-                return false;
-            });
-        }
-        
-        $(window).resize(function(){
-            console.log("Resize detected");
-            if ($(window).width() <= 768) {
-                console.log("Switching to mobile view");
-                if (!$(".mobileMenu").length) {
-                    console.log("Adding .mobileMenu");
-                    $("header .wrap").append('<div class="mobileMenu"></div>');
-                }
-                $("header .wrap ul").appendTo(".mobileMenu");
-
-                $(".ham").off("click");
-                $(".ham").on("click",function(){
-                    $(".mobileMenu").toggleClass('mobileMenuShow');
-                    return false;
-                });
-            
-                console.log("Moved ul to .mobileMenu");
-            } else {
-                console.log("Switching to desktop view");
-                if ($(".mobileMenu").length) {
-                    $("header .wrap ul").appendTo("header .wrap");
-                    $(".mobileMenu").remove();
-                    console.log(".mobileMenu removed");
-                }
-            }
-        });
-    });
-</script>
 </head>
 <body>
     <header>
@@ -234,7 +187,7 @@
                 <div class="wrap flex port port5">
                     <div class="img">
                         <figure>
-                            <a href="https://miay3564.github.io/pf3/">
+                            <a href="">
                                 <img src="img/dokdo.png" alt="독도체험관">
                                 <figcaption>독도체험관 카피 사이트</figcaption>
                             </a>
@@ -260,7 +213,7 @@
                 <div class="wrap flex port port6">
                     <div class="img">
                         <figure>
-                            <a href="https://miay3564.github.io/pf3_2/">
+                            <a href="">
                                 <img src="img/kyobo.png" alt="교보문고 이노스테이지">
                                 <figcaption>교보문고 이노스테이지 카피 사이트</figcaption>
                             </a>
@@ -283,16 +236,44 @@
                         <a href="https://miay3564.github.io/pf3_2/" class="block">바로가기</a>
                     </div>
                 </div>
+                <div class="wrap flex port port7">
+                    <div class="img">
+                        <figure>
+                            <a href="">
+                                <img src="img/bxgs.png" alt="백상 갤러리샵">
+                                <figcaption>백상 갤러리샵 카피 사이트</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="po">
+                        <h3>백상 갤러리샵</h3>
+                        <p>카피 사이트</p>
+                        <ul>
+                            <li>웹디자인</li>
+                            <li>
+                                <h4>작업 툴 :</h4>
+                                <p>vs code</p>
+                            </li>
+                            <li>
+                                <h4>작업 언어 :</h4>
+                                <p>html, css, JavaScript</p>
+                            </li>
+                        </ul>
+                        <a href="https://miay3564.github.io/pf4/" class="block">바로가기</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about">
             <h2 class="h2t">ABOUT</h2>
             <div class="wrap flex">
-                <figure>
-                    <img src="img/flower.jpg" alt="신수민 프로필사진">
-                    <figcaption>신수민</figcaption>
-                    <a href="" class="block">이력서</a>
-                </figure>
+                <div class="img">
+                    <figure>
+                        <img src="img/flower.jpg" alt="신수민 프로필사진">
+                        <figcaption>신수민</figcaption>
+                        <a href="" class="block">이력서</a>
+                    </figure>
+                </div>
                 <div class="ab">
                     <ul>
                         <li>신수민</li>

@@ -1,31 +1,27 @@
 div.p2 .slick-prev{
-    left: 20px;
+    left: 100px;
     z-index: 1;
     transform: translateY(-30px);
-    width: 40px;
-    height: 40px;
 }
 div.p2 .slick-prev::before{
     content: "";
     background-image: url(../img/prev.svg);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
 }
 div.p2 .slick-next{
-    right: 20px;
+    right: 100px;
     z-index: 1;
     transform: translateY(-30px);
-    width: 40px;
-    height: 40px;
 }
 div.p2 .slick-next::before{
     content: "";
     background-image: url(../img/next.svg);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
     background-position: center;
     background-repeat: no-repeat;

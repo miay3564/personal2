@@ -1,37 +1,41 @@
 #about {
-  padding: 3% 3% 6% 3%;
-  /*! background-color: black; */
+  background-color: black;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #about h2{
   color: white;
   text-align: center;
   margin-bottom: 50px;
+  transform: translateY(-100%);
 }
 #about .wrap {
-  justify-content: center;
   align-items: center;
-  gap: 100px;
-  width: 1200px;
+  justify-content: center;
 }
-#about .wrap  figure {
+#about .wrap .img {
   width: 347px;
   height: auto;
+  margin-right: 50px;
+}
+#about .wrap .img figure {
+  width: 100%;
+  height: 100%;
   position: relative;
   box-sizing: border-box;
 }
-#about .wrap  figure img { 
+#about .wrap .img figure img { 
   width: 100%;
   height: 100%;
 }
-#about .wrap  figure figcaption {
+#about .wrap .img figure figcaption {
   
   display: none;
 }
-#about .wrap  figure a {  
+#about .wrap .img figure a {  
   font-size: 18px;
   border: 1px solid white;
   display: inline;
@@ -42,7 +46,7 @@
   margin-top: 20px;
   transition: 1s;
 }
-#about .wrap  figure a:hover{
+#about .wrap .img figure a:hover{
   color: black;
   background-color: white;
 }
@@ -61,7 +65,7 @@
 }
 #about .wrap .ab ul li:nth-child(2) {
   font-size: 20px;
-  line-height: 2;
+  margin-bottom: 70px;
 }
 #about .wrap .ab ul li:nth-child(3) { 
   font-size: 18px;

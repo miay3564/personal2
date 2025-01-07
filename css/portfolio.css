@@ -1,18 +1,15 @@
 #portfolio {
-  padding: 5% 3% 6% 3%;
-  background-color: #B3AB9B;
   height: 100vh;
+  background-color: #B3AB9B;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #portfolio h2{
   color: white;
   text-align: center;
   margin-bottom: 80px;
-  font-weight: 100;
-  font-size: 78px;
-  margin-top: -100px;
 }
 #portfolio .p2 {
   box-sizing: border-box;
@@ -25,11 +22,9 @@
   align-items: center;
   margin: 0 auto;
   display: flex;
-  /*! background-color: gray; */
-  /*! padding: 40px 0; */
+  padding: 40px 0;
   border-radius: 50px;
-  height: auto;
-  margin-top: 30px;
+  height: fit-content;
 }
 #portfolio .p2 .port1{
 
@@ -62,7 +57,7 @@
 #portfolio .p2 .port .img figure a img {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 #portfolio .p2 .port .img figure a figcaption {
   width: 100%;
@@ -75,7 +70,7 @@
   margin-left: 60px;
   padding-left: 30px;
   align-self: baseline;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #portfolio .p2 .port .po h3 {
   font-size: 32px;
