@@ -23,7 +23,7 @@ div#title h2::before{
   display: block;
   width: 1366px;
   height: 530px;
-  background-image: url(../img/titlet.PNG);
+  background-image: url(../img/titlet.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
