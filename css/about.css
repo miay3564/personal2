@@ -15,46 +15,39 @@
 #about .wrap {
   align-items: center;
   justify-content: center;
+  padding: 2%;
 }
 #about .wrap .img {
   width: 347px;
-  height: auto;
+  height: 100%;
   margin-right: 50px;
 }
-#about .wrap .img figure {
+#about .wrap .img ul {
   width: 100%;
   height: 100%;
   position: relative;
   box-sizing: border-box;
 }
-#about .wrap .img figure img { 
+#about .wrap .img ul li img { 
   width: 100%;
   height: 100%;
 }
-#about .wrap .img figure figcaption {
-  
-  display: none;
-}
-#about .wrap .img figure a {  
+#about .wrap .img ul li a {  
   font-size: 18px;
   border: 1px solid white;
-  display: inline;
   padding: 5px 40px;
   border-radius: 19px;
   position: absolute;
-  left: calc(50% - 66px);
+  left: calc(50% - 68px);
   margin-top: 20px;
   transition: 1s;
 }
-#about .wrap .img figure a:hover{
+#about .wrap .img ul li a:hover{
   color: #000;
   background-color: #d4b8b8;
 }
 #about .wrap .ab { 
   color: black;
-}
-#about .wrap .ab ul {
-  
 }
 #about .wrap .ab ul li {
   line-height: 1.4;
