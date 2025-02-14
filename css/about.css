@@ -1,16 +1,16 @@
 #about {
-  background-color: black;
-  height: 100vh;
+  background: #fdfdf9;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 7% 0;
 }
 #about h2{
-  color: white;
   text-align: center;
   margin-bottom: 50px;
-  transform: translateY(-100%);
+  color: #45423c;
 }
 #about .wrap {
   align-items: center;
@@ -47,17 +47,18 @@
   transition: 1s;
 }
 #about .wrap .img figure a:hover{
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #d4b8b8;
 }
 #about .wrap .ab { 
-  color: white;
+  color: black;
 }
 #about .wrap .ab ul {
   
 }
 #about .wrap .ab ul li {
   line-height: 1.4;
+  color: #45423c;
 }
 #about .wrap .ab ul li:nth-child(1) {
   font-size: 22px;
@@ -74,6 +75,7 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 3;
+  color: #45423c;
 }
 #about .wrap .ab ul li:nth-child(4) {
   font-size: 18px;

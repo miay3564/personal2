@@ -3,13 +3,13 @@ main{
 }
 main #skill{
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
+  background: #fdfdf9;
   padding: 3%;
   box-sizing: border-box;
 }
 main #skill .wrap{
-  color: #fff;
+  color: #45423c;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,6 @@ main #skill .wrap .ss ul.s li::before{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
   border-radius: 10px;
 }
 main #skill .wrap .ss ul.s li:nth-child(1)::before{

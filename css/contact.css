@@ -1,6 +1,7 @@
 #contact{
-  background-color: black;
-  height: 100vh;
+  background: #fdfdf9;
+  height: 100%;
+  padding: 8% 0;
 }
 #contact .wrap{
   max-width: 1750px;
@@ -11,31 +12,15 @@
   gap: 60px;
 }
 #contact .wrap h2{
-  color: white;
   text-align: center;
-  margin-top: 30px;
-  transform: translateY(-250%);
+  color: #45423c;
 }
 #contact .wrap ul{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
-}
-#contact .wrap ul li{
-    
-}
-#contact .wrap ul li.kakao{
-    
-}
-#contact .wrap ul li.insta{
-    
-}
-#contact .wrap ul li.phone{
-    
-}
-#contact .wrap ul li.gmail{
-    
+  padding: 7% 0;
 }
 #contact .wrap ul li a{
   text-align: center;

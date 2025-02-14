@@ -27,7 +27,7 @@ div.p2 .slick-next::before{
     background-repeat: no-repeat;
 }
 div.p2 .slick-dots{
-    bottom: -150px;
+    bottom: -105px;
     margin-bottom: 100px;
 }
 div.p2 .slick-dots li button::before{

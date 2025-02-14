@@ -1,13 +1,11 @@
 header{
-  position: absolute;
   width: 100%;
-}
-header:hover{
-
+  height: 100px;
+  background: #fdfdf9;
 }
 header .wrap{
   padding: 0 3%;
-  height: 100px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -24,9 +22,6 @@ header .wrap h1 a{
   box-sizing: border-box;
   font-size: 22px;
   font-weight: 600;
-}
-header .wrap h1::before{
-  
 }
 header .wrap ul{
   height: 100%;
