@@ -11,12 +11,16 @@
     margin-right: 10px;
   }
 /*  header  */
-  header .wrap{
+  header{
     height: calc(100px * 0.8);
+    width: 100%;
+  }
+  header .wrap {
+    height: 100%;
   }
   header .wrap h1 a{
-    font-size: calc(22px * 0.9);
-    padding: 10px 15px 10px 5px;
+    font-size: calc(22px * 0.8);
+    padding: 10px;
   }
   header .wrap ul{
     display: none;
@@ -25,25 +29,27 @@
   div#title{
     justify-content: center;
   }
-  div#title h2{ 
-    font-size: 50px;
-    padding-left: 20px;
+  div#title h2::before{
+    width: 358px;
+    height: 132px;
   }
   div#title p{
-    padding-left: 20px;
-    font-size: 36px;
-    padding-bottom: 0;
-    margin-top: 12px;
+    font-size: 0;
   }
 /*  skill  */
   main #skill .wrap h2{
     margin: 35px 0;
   }
   main #skill .wrap .ss{
+    width: 100%;
+    height: 100%;
+  }
+  main #skill .wrap .ss ul.s{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     margin-bottom: 30px;
+    gap: 20px;
   }
   main #skill .wrap .ss ul.s1{
     margin-right: 0;
@@ -73,7 +79,17 @@
   }
   main #skill .wrap .ss ul.s li{
     font-size: calc(20px * 0.8);
-    line-height: 3;
+    line-height: 2;
+  }
+  main #skill .wrap .ss ul.s li::before{
+    width: 158px;
+    height: 158px;
+  }
+  main #skill .wrap .ss ul.s li:nth-child(1)::before{
+    background-size: 388px 194px;
+  }
+  main #skill .wrap .ss ul.s li:nth-child(3)::before{
+    background-size: 285px 153px;
   }
 /*   portfolio   */
   #portfolio h2{
@@ -100,7 +116,7 @@
     width: 12px;
   }
   div.p2 .slick-dots{
-    bottom: -10px;
+    bottom: -90px;
   }
   /*  slick-end  */
   #portfolio .p2 .port{
@@ -114,14 +130,18 @@
     width: 90%;
     margin-bottom: 20px;
   }
+  #portfolio .p2 .port .img figure a img{
+    border-radius: 8px;
+  }
   #portfolio .p2 .port .img figure a figcaption{
     margin-top: 10px;
     font-size: 14px;
   }
   #portfolio .p2 .port .po{
     width: 90%;
-    margin-left: 0;
+    margin-left: 20px;
     padding-left: 0;
+    margin-top: 0;
   }
   #portfolio .p2 .port .po h3{
     font-size: calc(32px * 0.8);
