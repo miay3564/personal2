@@ -17,7 +17,7 @@ main #skill .wrap{
   align-items: center;
 }
 main #skill .wrap h2{
-  margin-bottom: 70px;
+  margin: 70px 0;
 }
 main #skill .wrap .ss{
   display: flex;

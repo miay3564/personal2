@@ -17,11 +17,11 @@ div#title h2::before{
   display: block;
   width: 1400px;
   height: 535px;
-  background-image: url(../img/titlee.png);
+  background-image: url(../img/titlee.PNG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translateY(-90px);
+  /*! transform: translateY(-90px); */
 }
 div#title h2 span{
   line-height: 1.3;
